@@ -61,7 +61,7 @@ def show_camera():
     window_title = "CSI Camera"
     device = torch.device("cuda:0")
     model = WeBACNN(device)
-    model.load_state_dict(torch.load("model_light.pt", map_location=device))
+    model.load_state_dict(torch.load("new_model_light.pt", map_location=device))
     model.to(device)
 
     angle_list = np.ones(3) * -1 
